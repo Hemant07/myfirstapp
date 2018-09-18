@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title Moana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#test').click(function() {
+                $('h1, h2, h3').toggleClass('text-success');
+            })
+            $('#test2').click(function() {
+            $('p').addClass('text-warning');
+            })
+            $('#btnS').click(function() {
+                $('h1, h2, h3, p').removeClass('text-success text-warning');
+                alert('hi');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Hello World</h1><br>
+            <h2>Here is some jquery example</h2><br>
+            <h3>So presenting example</h3>
+            <p><span class="text-primary">One</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium cupiditate, officia numquam alias quo sint, similique magnam facilis quam maiores delectus quaerat molestiae voluptates id distinctio maxime natus molestias eum.</p>
+            <p><span class="text-danger">Two</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium cupiditate, officia numquam alias quo sint, similique magnam facilis quam maiores delectus quaerat molestiae voluptates id distinctio maxime natus molestias eum.</p>
+            <p><span class="text-info">Three</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium cupiditate, officia numquam alias quo sint, similique magnam facilis quam maiores delectus quaerat molestiae voluptates id distinctio maxime natus molestias eum.</p>
+        </div>
+        <div class="form-inline">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" placeholder="Please Enter your address">
+                    <button type="button" class="btn btn-shadow" id="test"> Show/hide</button><br>
+                    <button type="button" class="btn btn-outline-dark" id="test2"> Press Me</button><br>
+                    <button type="button" class="btn btn-danger" id="btnS">Clear All</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
